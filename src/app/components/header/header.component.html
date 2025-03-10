@@ -29,7 +29,12 @@
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <!-- <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true"></span></a> -->
+        <!-- <button variant="text" raised="true" pButton severity="help">
+            <span pButtonLabel>Log in</span>
+        </button> -->
+
+        <p-button label="Log in" variant="text" [raised]="true" severity="help" />
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
