@@ -5,6 +5,8 @@ import Aura from '@primeng/themes/aura';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { API_BASE_URL } from '../environment/enviroment.token';
+import { environment } from '../environment/enviroment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,6 +16,7 @@ export const appConfig: ApplicationConfig = {
         theme: {
             preset: Aura
         }
-    })
+    }),
+    { provide: API_BASE_URL, useValue: environment.apiBaseUrl }
   ]
 };
